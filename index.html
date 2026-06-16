@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rise &amp; Invest | The education your school never offered</title>
+<meta name="description" content="Master classes and college counseling in college prep, career strategy, AI, and investing. Taught by Dylan Gutowski, Cornell Dyson '29.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rise & Invest | The education your school never offered">
+<meta property="og:description" content="Master classes and college counseling in college prep, career strategy, AI, and investing. Taught by Dylan Gutowski, Cornell Dyson '29.">
+<meta property="og:url" content="https://riseandinvest.com">
+<meta property="og:image" content="https://riseandinvest.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rise & Invest | The education your school never offered">
+<meta name="twitter:description" content="Master classes and college counseling in college prep, career strategy, AI, and investing. Taught by Dylan Gutowski, Cornell Dyson '29.">
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --ink: #0D1F14; --cream: #F8F5EE; --warm: #F0ECE4;
+    --green: #1A9E72; --green-pale: #EBF7F2;
+    --muted: #6B6762; --dim: rgba(248,245,238,0.55);
+    --border: rgba(13,12,10,0.1); --border-dk: rgba(248,245,238,0.12);
+    --sh-sm:0 2px 8px rgba(13,12,10,0.06),0 0 0 1px rgba(13,12,10,0.04);--sh-md:0 8px 28px rgba(13,12,10,0.09),0 0 0 1px rgba(13,12,10,0.05);--sh-lg:0 14px 44px rgba(13,12,10,0.11),0 0 0 1px rgba(13,12,10,0.05);--r-card:10px;--r-btn:6px;
+    --pad-x: clamp(24px,5vw,80px); --pad-y: clamp(72px,9vw,120px);
+    --max: 1280px;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family:'DM Sans',sans-serif; color:var(--ink); background:var(--cream); overflow-x:hidden; font-size:16px; }
+  body::before {
+    content:''; position:fixed; inset:-50%; width:200%; height:200%;
+    background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    opacity:0.025; pointer-events:none; z-index:9999;
+  }
+
+  /* NAV */
+  .nav { position:fixed; top:0; left:0; right:0; z-index:100; display:flex; align-items:center; justify-content:space-between; padding:0 var(--pad-x); height:64px; transition:background 0.4s,border-color 0.4s,box-shadow 0.4s; border-bottom:1px solid transparent; }
+  .nav.scrolled { background:rgba(248,245,238,0.95); border-bottom-color:var(--border); box-shadow:0 1px 24px rgba(13,12,10,0.06); backdrop-filter:blur(8px); }
+  .nav-logo { font-family:'Cormorant Garamond',serif; font-size:20px; font-weight:500; color:var(--cream); text-decoration:none; letter-spacing:0.01em; transition:color 0.4s; }
+  .nav.scrolled .nav-logo { color:var(--ink); }
+  .nav-logo em { font-style:italic; color:var(--green); }
+  .nav-links { display:flex; gap:30px; align-items:center; }
+  .nav-link { font-size:13px; color:rgba(248,245,238,0.65); text-decoration:none; letter-spacing:0.02em; transition:color 0.2s; }
+  .nav-link:hover { color:var(--cream); }
+  .nav.scrolled .nav-link { color:var(--muted); }
+  .nav.scrolled .nav-link:hover { color:var(--ink); }
+  .nav-link.active { color:var(--cream); font-weight:500; }
+  .nav.scrolled .nav-link.active { color:var(--ink); }
+  .nav-cta { font-size:12px; font-weight:500; letter-spacing:0.05em; padding:9px 20px; background:var(--green); color:#fff; border-radius:var(--r-btn); box-shadow:0 2px 8px rgba(26,158,114,0.25); text-decoration:none; transition:opacity 0.2s,transform 0.15s; }
+  .nav-cta:hover { opacity:0.87; transform:translateY(-1px); }
+
+  /* HERO */
+  .hero { min-height:100svh; grid-template-columns:52fr 48fr; background:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%201440%20500%27%20preserveAspectRatio%3D%27xMidYMid%20slice%27%3E%3Cpath%20fill%3D%27none%27%20stroke%3D%27rgba%2826%2C158%2C114%2C0.10%29%27%20stroke-width%3D%271.5%27%20d%3D%27M0%2C180%20C180%2C110%20360%2C250%20540%2C180%20C720%2C110%20900%2C250%201080%2C180%20C1260%2C110%201360%2C155%201440%2C180%27%2F%3E%3Cpath%20fill%3D%27none%27%20stroke%3D%27rgba%28255%2C255%2C255%2C0.04%29%27%20stroke-width%3D%271%27%20d%3D%27M0%2C300%20C240%2C230%20480%2C370%20720%2C300%20C960%2C230%201200%2C370%201440%2C300%27%2F%3E%3Cpath%20fill%3D%27none%27%20stroke%3D%27rgba%2826%2C158%2C114%2C0.06%29%27%20stroke-width%3D%271%27%20d%3D%27M0%2C420%20C200%2C360%20400%2C480%20600%2C420%20C800%2C360%201000%2C480%201200%2C420%20C1340%2C375%201390%2C400%201440%2C420%27%2F%3E%3Cpath%20fill%3D%27none%27%20stroke%3D%27rgba%28255%2C255%2C255%2C0.025%29%27%20stroke-width%3D%271%27%20d%3D%27M0%2C80%20C300%2C30%20600%2C130%20900%2C80%20C1200%2C30%201350%2C60%201440%2C80%27%2F%3E%3C%2Fsvg%3E") center/cover no-repeat, linear-gradient(150deg, #0D1F14 0%, #060C08 42%, #0A1810 100%); display:grid; grid-template-columns:45fr 55fr; padding-top:64px; overflow:hidden; }
+  .hero-left { display:flex; flex-direction:column; justify-content:center; padding:clamp(32px,4vh,64px) var(--pad-x) clamp(32px,4vh,64px) var(--pad-x); }
+  .hero-eyebrow { font-size:11px; font-weight:500; letter-spacing:0.18em; text-transform:uppercase; color:var(--green); margin-bottom:28px; opacity:0; animation:fadeUp 0.7s 0.15s ease forwards; }
+  .hero-h1 { font-family:'Cormorant Garamond',serif; font-size:clamp(48px,6.8vw,96px); font-weight:500; line-height:1.0; color:var(--cream); margin-bottom:26px; opacity:0; animation:fadeUp 0.8s 0.3s ease forwards; }
+  .hero-h1 em { font-style:italic; color:var(--green); }
+  .hero-sub { font-size:clamp(14px,1.1vw,16px); line-height:1.8; color:var(--dim); max-width:420px; margin-bottom:38px; opacity:0; animation:fadeUp 0.8s 0.48s ease forwards; }
+  .hero-actions { display:flex; gap:14px; align-items:center; opacity:0; animation:fadeUp 0.7s 0.62s ease forwards; }
+  .btn-primary { display:inline-block; padding:13px 26px; background:var(--green); color:#fff; font-size:13px; font-weight:500; letter-spacing:0.04em; text-decoration:none; border-radius:var(--r-btn); transition:opacity 0.2s,transform 0.15s; }
+  .btn-primary:hover { opacity:0.87; transform:translateY(-1px); }
+  .btn-ghost { display:inline-block; padding:13px 4px; color:rgba(248,245,238,0.65); font-size:13px; text-decoration:none; border-bottom:1.5px solid var(--green); transition:color 0.2s,border-color 0.2s; }
+  .btn-ghost:hover { color:var(--cream); border-color:rgba(248,245,238,0.5); }
+  .hero-stats { display:flex; gap:52px; margin-top:40px; padding-top:28px; border-top:1px solid var(--border-dk); opacity:0; animation:fadeUp 0.7s 0.78s ease forwards; }
+  .hero-stat-num { font-family:'Cormorant Garamond',serif; font-size:72px; font-weight:500; color:var(--cream); line-height:1; } .stat-icon { display:block; margin-bottom:12px; width:26px; height:26px; }
+  .hero-stat-label { font-size:13px; color:var(--dim); margin-top:6px; letter-spacing:0.02em; }
+  .hero-right { position:relative; overflow:hidden; }
+  .hero-img { width:100%; height:100%; object-fit:cover; object-position:center top; filter:brightness(0.7) saturate(0.8); display:block; }
+  .hero-img-fade { position:absolute; inset:0; background:linear-gradient(to right, #0D1F14 0%, rgba(13,31,20,0.7) 10%, rgba(13,31,20,0.35) 28%, rgba(13,31,20,0.08) 55%, transparent 100%), linear-gradient(to bottom, rgba(13,31,20,0.45) 0%, transparent 20%, transparent 80%, rgba(13,31,20,0.45) 100%); }
+  .hero-badge { position:absolute; bottom:28px; right:24px; padding:8px 14px; background:rgba(13,12,10,0.72); backdrop-filter:blur(8px); border:1px solid var(--border-dk); border-radius:var(--r-btn); font-size:11px; color:rgba(248,245,238,0.7); letter-spacing:0.04em; }
+  .hero-badge strong { color:var(--green); font-weight:500; }
+
+  /* MARQUEE */
+  .marquee { background:var(--green); overflow:hidden; padding:13px 0; }
+  .marquee-track { display:flex; width:max-content; animation:marquee 24s linear infinite; }
+  .m-item { display:flex; align-items:center; gap:20px; padding:0 28px; font-size:11.5px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; color:rgba(255,255,255,0.88); white-space:nowrap; }
+  .m-dot { width:3px; height:3px; border-radius:50%; background:rgba(255,255,255,0.45); flex-shrink:0; }
+
+  /* STATEMENT */
+  .statement { padding:var(--pad-y) var(--pad-x); max-width:var(--max); margin:0 auto; }
+  .s-label { font-size:13px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; color:var(--green); margin-bottom:22px; }
+  .s-text { font-family:'Cormorant Garamond',serif; font-size:clamp(26px,3.8vw,52px); font-weight:400; line-height:1.22; color:var(--ink); max-width:860px; }
+  .s-text em { font-style:italic; color:var(--green); }
+
+  /* TRACKS */
+  .tracks { padding:var(--pad-y) var(--pad-x) var(--pad-y); max-width:var(--max); margin:0 auto; }
+  .section-head { display:flex; justify-content:space-between; align-items:baseline; margin-bottom:28px; }
+  .section-title { font-family:'Cormorant Garamond',serif; font-size:clamp(26px,3vw,40px); font-weight:500; color:var(--ink); }
+  .s-link { font-size:13px; color:var(--green); text-decoration:none; border-bottom:1px solid rgba(26,158,114,0.3); transition:border-color 0.2s; }
+  .s-link:hover { border-color:var(--green); }
+  .track-grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  .track-card { padding:36px 32px; border:1px solid var(--border); border-radius:var(--r-card); text-decoration:none; display:block; background:var(--cream); box-shadow:var(--sh-sm); transition:border-color 0.25s,transform 0.25s,box-shadow 0.25s; border-top:3px solid transparent; }
+  .track-card:hover { transform:translateY(-4px); box-shadow:var(--sh-lg); }
+  .track-card-cc { border-top-color:var(--green); }
+  .track-card-cc:hover { border-color:rgba(26,158,114,0.35); border-top-color:var(--green); }
+  .track-card-mc { border-top-color:#5B5AC4; }
+  .track-card-mc:hover { border-color:rgba(91,90,196,0.3); border-top-color:#5B5AC4; }
+  .track-icon { width:46px; height:46px; border-radius:10px; display:flex; align-items:center; justify-content:center; margin-bottom:20px; flex-shrink:0; }
+  .track-icon-cc { background:rgba(26,158,114,0.1); }
+  .track-icon-mc { background:rgba(91,90,196,0.1); }
+  .track-n { font-size:11px; letter-spacing:0.12em; text-transform:uppercase; margin-bottom:14px; }
+  .track-n-cc { color:var(--green); }
+  .track-n-mc { color:#5B5AC4; }
+  .track-title { font-family:'Cormorant Garamond',serif; font-size:clamp(24px,2.6vw,34px); font-weight:500; color:var(--ink); line-height:1.1; margin-bottom:12px; }
+  .track-desc { font-size:16px; line-height:1.78; color:var(--muted); margin-bottom:24px; }
+  .track-tags { display:flex; flex-wrap:wrap; gap:7px; }
+  .t-tag { font-size:11px; padding:4px 12px; border:1px solid var(--border); border-radius:999px; color:var(--muted); }
+  .t-tag-cc { background:rgba(26,158,114,0.08); border-color:rgba(26,158,114,0.2); color:#0E5E43; }
+  .t-tag-mc { background:rgba(26,158,114,0.08); border-color:rgba(26,158,114,0.2); color:#0E5E43; }
+
+  /* FEATURED DARK */
+  .featured { background:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%201440%20500%27%20preserveAspectRatio%3D%27xMidYMid%20slice%27%3E%3Cpath%20fill%3D%27none%27%20stroke%3D%27rgba%2826%2C158%2C114%2C0.10%29%27%20stroke-width%3D%271.5%27%20d%3D%27M0%2C180%20C180%2C110%20360%2C250%20540%2C180%20C720%2C110%20900%2C250%201080%2C180%20C1260%2C110%201360%2C155%201440%2C180%27%2F%3E%3Cpath%20fill%3D%27none%27%20stroke%3D%27rgba%28255%2C255%2C255%2C0.04%29%27%20stroke-width%3D%271%27%20d%3D%27M0%2C300%20C240%2C230%20480%2C370%20720%2C300%20C960%2C230%201200%2C370%201440%2C300%27%2F%3E%3Cpath%20fill%3D%27none%27%20stroke%3D%27rgba%2826%2C158%2C114%2C0.06%29%27%20stroke-width%3D%271%27%20d%3D%27M0%2C420%20C200%2C360%20400%2C480%20600%2C420%20C800%2C360%201000%2C480%201200%2C420%20C1340%2C375%201390%2C400%201440%2C420%27%2F%3E%3Cpath%20fill%3D%27none%27%20stroke%3D%27rgba%28255%2C255%2C255%2C0.025%29%27%20stroke-width%3D%271%27%20d%3D%27M0%2C80%20C300%2C30%20600%2C130%20900%2C80%20C1200%2C30%201350%2C60%201440%2C80%27%2F%3E%3C%2Fsvg%3E") center/cover no-repeat, linear-gradient(150deg, #0D1F14 0%, #060C08 42%, #0A1810 100%); padding:var(--pad-y) var(--pad-x); }
+  .featured-inner { max-width:var(--max); margin:0 auto; }
+  .feat-head { display:flex; justify-content:space-between; align-items:baseline; margin-bottom:36px; }
+  .feat-title { font-family:'Cormorant Garamond',serif; font-size:clamp(26px,3vw,40px); font-weight:500; color:var(--cream); }
+  .feat-link { font-size:13px; color:rgba(248,245,238,0.45); text-decoration:none; border-bottom:1px solid rgba(248,245,238,0.18); transition:color 0.2s,border-color 0.2s; }
+  .feat-link:hover { color:var(--cream); border-color:rgba(248,245,238,0.5); }
+  .feat-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; } .feat-icon { display:block; margin-bottom:14px; }
+  .feat-card { border:1px solid var(--border-dk); border-radius:var(--r-card); padding:24px 22px; text-decoration:none; transition:border-color 0.25s,background 0.25s,transform 0.25s; }
+  .feat-card:hover { border-color:rgba(248,245,238,0.26); background:rgba(248,245,238,0.05); transform:translateY(-2px); }
+  .feat-tag { font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:var(--green); margin-bottom:12px; display:block; }
+  .feat-name { font-family:'Cormorant Garamond',serif; font-size:clamp(18px,2vw,24px); font-weight:500; color:var(--cream); line-height:1.18; margin-bottom:10px; }
+  .feat-desc { font-size:15px; line-height:1.72; color:var(--dim); }
+
+  /* HOW IT WORKS */
+  .how { padding:var(--pad-y) var(--pad-x); max-width:var(--max); margin:0 auto; }
+  .how-label { font-size:13px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted); margin-bottom:44px; }
+  .how-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:52px; }
+  .how-num { font-family:'Cormorant Garamond',serif; font-size:72px; font-weight:400; color:rgba(13,12,10,0.08); line-height:1; margin-bottom:16px; }
+  .how-h3 { font-family:'Cormorant Garamond',serif; font-size:22px; font-weight:500; color:var(--ink); margin-bottom:10px; }
+  .how-p { font-size:16px; line-height:1.8; color:var(--muted); }
+
+
+  /* SECTION SEPARATOR */
+  .sep { height:1px; background:rgba(13,12,10,0.1); }
+
+  /* TESTIMONIALS */
+  .testimonials { padding:var(--pad-y) var(--pad-x); max-width:var(--max); margin:0 auto; }
+  .test-head { display:flex; justify-content:space-between; align-items:baseline; margin-bottom:36px; }
+  .test-label { font-size:13px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted); }
+  .test-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  .test-card { background:var(--warm); border:1px solid var(--border); border-radius:var(--r-card); padding:28px 26px; box-shadow:var(--sh-sm); }
+  .test-quote { font-family:'Cormorant Garamond',serif; font-size:clamp(16px,1.5vw,19px); font-weight:400; color:var(--ink); line-height:1.55; margin-bottom:20px; position:relative; }
+  .test-quote::before { content:'\201C'; font-size:52px; line-height:0; vertical-align:-18px; color:var(--green); margin-right:3px; font-family:'Cormorant Garamond',serif; opacity:0.6; }
+  .test-attribution { display:flex; align-items:center; gap:12px; }
+  .test-avatar { width:36px; height:36px; border-radius:50%; background:var(--green); display:flex; align-items:center; justify-content:center; font-family:'Cormorant Garamond',serif; font-size:16px; font-weight:500; color:#fff; flex-shrink:0; }
+  .test-name { font-size:13px; font-weight:500; color:var(--ink); }
+  .test-context { font-size:11px; color:var(--muted); margin-top:2px; }
+  .test-course { display:inline-block; margin-top:14px; font-size:10px; font-weight:500; letter-spacing:0.08em; padding:3px 10px; border-radius:999px; background:var(--green-pale); color:var(--green); }
+
+  /* HOMEPAGE FAQ */
+  .idx-faq { padding:var(--pad-y) var(--pad-x); border-top:1px solid var(--border); background:var(--warm); }
+  .idx-faq-inner { max-width:var(--max); margin:0 auto; }
+  .idx-faq-eyebrow { font-size:13px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted); margin-bottom:20px; }
+  .idx-faq-h { font-family:'Cormorant Garamond',serif; font-size:clamp(24px,2.8vw,36px); font-weight:500; color:var(--ink); margin-bottom:36px; line-height:1.15; }
+  .idx-faq-h em { font-style:italic; }
+  .idx-faq-grid { display:grid; grid-template-columns:1fr 1fr; gap:0 56px; }
+  .idx-faq-item { border-top:1px solid var(--border); padding:20px 0; }
+  .idx-faq-q { font-size:14px; font-weight:500; color:var(--ink); margin-bottom:8px; line-height:1.4; }
+  .idx-faq-a { font-size:15px; color:var(--muted); line-height:1.78; }
+
+  /* CTA */
+  .cta { background:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%201440%20500%27%20preserveAspectRatio%3D%27xMidYMid%20slice%27%3E%3Cpath%20fill%3D%27none%27%20stroke%3D%27rgba%2826%2C158%2C114%2C0.10%29%27%20stroke-width%3D%271.5%27%20d%3D%27M0%2C180%20C180%2C110%20360%2C250%20540%2C180%20C720%2C110%20900%2C250%201080%2C180%20C1260%2C110%201360%2C155%201440%2C180%27%2F%3E%3Cpath%20fill%3D%27none%27%20stroke%3D%27rgba%28255%2C255%2C255%2C0.04%29%27%20stroke-width%3D%271%27%20d%3D%27M0%2C300%20C240%2C230%20480%2C370%20720%2C300%20C960%2C230%201200%2C370%201440%2C300%27%2F%3E%3Cpath%20fill%3D%27none%27%20stroke%3D%27rgba%2826%2C158%2C114%2C0.06%29%27%20stroke-width%3D%271%27%20d%3D%27M0%2C420%20C200%2C360%20400%2C480%20600%2C420%20C800%2C360%201000%2C480%201200%2C420%20C1340%2C375%201390%2C400%201440%2C420%27%2F%3E%3Cpath%20fill%3D%27none%27%20stroke%3D%27rgba%28255%2C255%2C255%2C0.025%29%27%20stroke-width%3D%271%27%20d%3D%27M0%2C80%20C300%2C30%20600%2C130%20900%2C80%20C1200%2C30%201350%2C60%201440%2C80%27%2F%3E%3C%2Fsvg%3E") center/cover no-repeat, linear-gradient(150deg, #0D1F14 0%, #060C08 42%, #0A1810 100%); padding:var(--pad-y) var(--pad-x); text-align:center; }
+  .cta-inner { max-width:680px; margin:0 auto; }
+  .cta-h { font-family:'Cormorant Garamond',serif; font-size:clamp(34px,5vw,66px); font-weight:500; color:var(--cream); line-height:1.06; margin-bottom:18px; }
+  .cta-h em { font-style:italic; color:var(--green); }
+  .cta-p { font-size:17px; color:var(--dim); line-height:1.8; margin-bottom:36px; }
+  .cta-row { display:flex; gap:16px; justify-content:center; align-items:center; }
+  .cta-pricing { font-size:12px; color:rgba(248,245,238,0.38); margin-top:18px; letter-spacing:0.02em; }
+  .btn-ghost-light { display:inline-block; padding:13px 6px; color:rgba(248,245,238,0.5); font-size:13px; text-decoration:none; border-bottom:1px solid rgba(248,245,238,0.2); transition:color 0.2s,border-color 0.2s; }
+  .btn-ghost-light:hover { color:var(--cream); border-color:rgba(248,245,238,0.5); }
+
+  /* FOOTER */
+  .footer { background:#0A1810; border-top:1px solid var(--border-dk); padding:26px var(--pad-x); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; }
+  .f-logo { font-family:'Cormorant Garamond',serif; font-size:16px; font-weight:500; color:rgba(248,245,238,0.55); text-decoration:none; }
+  .f-logo em { font-style:italic; color:var(--green); }
+  .f-social { display:flex; align-items:center; gap:14px; }
+  .f-soc-link { display:flex; align-items:center; color:rgba(248,245,238,0.35); transition:color 0.2s; }
+  .f-soc-link:hover { color:rgba(248,245,238,0.7); }
+  .f-email { font-size:12px; color:var(--green); text-decoration:none; }
+  .f-email:hover { text-decoration:underline; }
+
+  /* ANIMATIONS */
+  @keyframes fadeUp { from { opacity:0; transform:translateY(7px); } to { opacity:1; transform:translateY(0); } }
+  @keyframes marquee { from { transform:translateX(0); } to { transform:translateX(-50%); } }
+  .fade-up { opacity:0; transform:translateY(26px); transition:opacity 0.75s ease, transform 0.75s ease; }
+  .fade-up.visible { opacity:1; transform:translateY(0); }
+  .fade-up.d1 { transition-delay:0.1s; } .fade-up.d2 { transition-delay:0.2s; } .fade-up.d3 { transition-delay:0.3s; }
+
+  /* HAMBURGER + MOBILE MENU */
+  .nav-hamburger { display:none; flex-direction:column; gap:5px; cursor:pointer; padding:6px; background:none; border:none; margin-left:8px; flex-shrink:0; }
+  .nav-hamburger span { display:block; width:20px; height:1.5px; background:var(--cream); border-radius:2px; transition:transform 0.25s,opacity 0.25s; }
+  .nav.scrolled .nav-hamburger span { background:var(--ink); }
+  .nav-hamburger.open span:nth-child(1) { transform:translateY(6.5px) rotate(45deg); }
+  .nav-hamburger.open span:nth-child(2) { opacity:0; transform:scaleX(0); }
+  .nav-hamburger.open span:nth-child(3) { transform:translateY(-6.5px) rotate(-45deg); }
+  .mobile-menu { display:none; position:fixed; top:64px; left:0; right:0; background:rgba(6,12,8,0.98); backdrop-filter:blur(16px); border-bottom:1px solid var(--border-dk); z-index:98; padding:8px 0 20px; }
+  .mobile-menu.open { display:block; }
+  .mobile-menu a { display:block; font-size:15px; color:rgba(248,245,238,0.65); text-decoration:none; padding:13px var(--pad-x); transition:color 0.15s; }
+  .mobile-menu a:hover { color:var(--cream); }
+  .mobile-menu-divider { height:1px; background:var(--border-dk); margin:8px 0; }
+  .mobile-book { display:block; margin:12px var(--pad-x) 0; padding:13px; background:var(--green); color:#fff !important; font-size:13px; font-weight:500; border-radius:var(--r-btn); text-align:center; letter-spacing:0.04em; }
+
+  @media (max-width:768px) {
+    .nav-links { display:none; }
+    .nav-hamburger { display:flex; }
+    .hero { grid-template-columns:1fr; }
+    .hero-right { height:320px; }
+    .hero-stats { flex-wrap:wrap; gap:20px; }
+    .track-grid,.how-grid { grid-template-columns:1fr; } .feat-grid { grid-template-columns:repeat(2,1fr); }
+    .section-head,.feat-head { flex-direction:column; gap:10px; }
+    .cta-row { flex-direction:column; }
+    .footer { flex-direction:column; align-items:flex-start; gap:8px; }
+    .test-grid { grid-template-columns:1fr; }
+    .test-head { flex-direction:column; gap:10px; }
+    .idx-faq-grid { grid-template-columns:1fr; }
+  }
+  @media (max-width:480px) {
+    .feat-grid { grid-template-columns:1fr; }
+    .hero-stat-num { font-size:52px; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <a href="home.html" class="nav-logo">Rise <em>&amp;</em> Invest</a>
+  <div class="nav-links">
+    <a class="nav-link active" href="home.html">Home</a>
+    <a class="nav-link" href="master-classes.html">Master Classes</a>
+    <a class="nav-link" href="about.html">About</a>
+    <a class="nav-link" href="book.html">Book</a>
+  </div>
+  <a class="nav-cta" href="book.html">Book a session</a>
+  <button class="nav-hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Open menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="home.html">Home</a>
+  <a href="master-classes.html">Master Classes</a>
+  <a href="about.html">About</a>
+  <div class="mobile-menu-divider"></div>
+  <a href="book.html" class="mobile-book">Book a session</a>
+</div>
+
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow">College Counseling &nbsp;&middot;&nbsp; Master Classes &nbsp;&middot;&nbsp; Cornell Dyson &rsquo;29</div>
+    <h1 class="hero-h1">The education<br>your school<br><em>never offered.</em></h1>
+    <p class="hero-sub">Personalized courses and 1:1 coaching on the four skills that actually change where you end up: college prep, career strategy, AI, and investing.</p>
+    <div class="hero-actions">
+      <a href="book.html" class="btn-primary">Get college counseling</a>
+      <a href="master-classes.html" class="btn-ghost">Explore master classes</a>
+    </div>
+    <div class="hero-stats">
+      <div><svg class="stat-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1A9E72" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><div class="hero-stat-num">100+</div><div class="hero-stat-label">Students taught</div></div>
+      <div><svg class="stat-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1A9E72" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg><div class="hero-stat-num">12</div><div class="hero-stat-label">Active courses</div></div>
+      <div><svg class="stat-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1A9E72" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><div class="hero-stat-num">3+</div><div class="hero-stat-label">Countries</div></div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <img src="teaching.jpg" alt="Dylan Gutowski teaching" class="hero-img">
+    <div class="hero-img-fade"></div>
+    <div class="hero-badge"><strong>Dylan Gutowski</strong> &nbsp;&middot;&nbsp; Cornell Dyson &rsquo;29</div>
+  </div>
+</section>
+
+<div class="marquee">
+  <div class="marquee-track">
+    <div class="m-item">College Prep<span class="m-dot"></span></div>
+    <div class="m-item">AI Skills<span class="m-dot"></span></div>
+    <div class="m-item">Career Strategy<span class="m-dot"></span></div>
+    <div class="m-item">SAT Tutoring<span class="m-dot"></span></div>
+    <div class="m-item">Internships<span class="m-dot"></span></div>
+    <div class="m-item">Claude Advanced<span class="m-dot"></span></div>
+    <div class="m-item">Interview Prep<span class="m-dot"></span></div>
+    <div class="m-item">College Counseling<span class="m-dot"></span></div>
+    <div class="m-item">College Prep<span class="m-dot"></span></div>
+    <div class="m-item">AI Skills<span class="m-dot"></span></div>
+    <div class="m-item">Career Strategy<span class="m-dot"></span></div>
+    <div class="m-item">SAT Tutoring<span class="m-dot"></span></div>
+    <div class="m-item">Internships<span class="m-dot"></span></div>
+    <div class="m-item">Claude Advanced<span class="m-dot"></span></div>
+    <div class="m-item">Interview Prep<span class="m-dot"></span></div>
+    <div class="m-item">College Counseling<span class="m-dot"></span></div>
+  </div>
+</div>
+
+<div class="statement fade-up">
+  <div class="s-label">The approach</div>
+  <p class="s-text">There&rsquo;s a gap between what most programs teach and what actually moves the needle. I teach the version I wish I&rsquo;d had.</p>
+</div>
+
+<div class="sep"></div>
+<div class="tracks fade-up">
+  <div class="section-head">
+    <h2 class="section-title">Two ways to work with me</h2>
+    <a href="master-classes.html" class="s-link">All master classes &rarr;</a>
+  </div>
+  <div class="track-grid">
+    <a href="book.html" class="track-card track-card-cc">
+      <div class="track-icon track-icon-cc">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A9E72" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+      </div>
+      <div class="track-n track-n-cc">01, Full Engagement</div>
+      <div class="track-title">College Counseling</div>
+      <p class="track-desc">You become my project. I don&rsquo;t hand you a template, I build your entire application strategy from scratch. School list, essays, resume, interview prep, LinkedIn, positioning. Everything that actually moves the needle.</p>
+
+    </a>
+    <a href="master-classes.html" class="track-card track-card-mc">
+      <div class="track-icon track-icon-mc">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5B5AC4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+      </div>
+      <div class="track-n track-n-mc">02, Focused Sessions</div>
+      <div class="track-title">Master Classes</div>
+      <p class="track-desc">Group sessions on a single topic. No long commitment, high-signal instruction on exactly what you need. College apps, AI, career strategy, investing, SAT, and more.</p>
+      <div class="track-tags">
+        <span class="t-tag t-tag-mc">AI Website Builder</span><span class="t-tag t-tag-mc">Investing 101</span><span class="t-tag t-tag-mc">Internships 101</span><span class="t-tag t-tag-mc">Claude Advanced</span><span class="t-tag t-tag-mc">+&thinsp;8 more</span>
+      </div>
+    </a>
+  </div>
+</div>
+
+<div class="featured fade-up">
+  <div class="featured-inner">
+    <div class="feat-head">
+      <div class="feat-title">Four courses worth knowing</div>
+      <a href="master-classes.html" class="feat-link">All 12 master classes &rarr;</a>
+    </div>
+    <div class="feat-grid">
+      <a href="master-classes.html#insiders-playbook" class="feat-card">
+        <svg class="feat-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A9E72" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        <span class="feat-tag">College Prep</span>
+        <div class="feat-name">The Insider&rsquo;s Playbook</div>
+        <p class="feat-desc">Most programs tell you what to do. This one teaches you what to ask first.</p>
+      </a>
+      <a href="master-classes.html#internships-101" class="feat-card">
+        <svg class="feat-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A9E72" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        <span class="feat-tag">Career</span>
+        <div class="feat-name">Internships &amp; Opportunities 101</div>
+        <p class="feat-desc">The system behind landing a PE role at a $17B firm before sophomore year.</p>
+      </a>
+      <a href="master-classes.html#claude-advanced" class="feat-card">
+        <svg class="feat-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A9E72" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <span class="feat-tag">AI &amp; Tech</span>
+        <div class="feat-name">Claude Advanced</div>
+        <p class="feat-desc">Not an AI tutorial. The same workflow I use to build and ship real products.</p>
+      </a>
+      <a href="master-classes.html#investing-101" class="feat-card">
+        <svg class="feat-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A9E72" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+        <span class="feat-tag">Finance</span>
+        <div class="feat-name">Investing 101</div>
+        <p class="feat-desc">Two sessions. Real market simulation. A live account and a plan you actually own.</p>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<div class="sep"></div>
+<div class="how">
+  <div class="how-label fade-up">The method</div>
+  <div class="how-grid">
+    <div class="how-step fade-up">
+      <div class="how-num">01</div>
+      <div class="how-h3">Discovery</div>
+      <p class="how-p">Every session starts by understanding where you are, what you want, and what&rsquo;s actually in the way.</p>
+    </div>
+    <div class="how-step fade-up d1">
+      <div class="how-num">02</div>
+      <div class="how-h3">Focused lesson</div>
+      <p class="how-p">High-signal content built around your specific situation, not a lecture. Adapted in real time to what you actually need.</p>
+    </div>
+    <div class="how-step fade-up d2">
+      <div class="how-num">03</div>
+      <div class="how-h3">Build &amp; do</div>
+      <p class="how-p">You apply it the same session. A finished resume, a live website, a real email sent, not notes you&rsquo;ll maybe read later.</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="idx-faq">
+  <div class="idx-faq-inner">
+    <div class="idx-faq-eyebrow fade-up">Common questions</div>
+    <h2 class="idx-faq-h fade-up">Good to know <em>before</em> you book.</h2>
+    <div class="idx-faq-grid">
+      <div class="idx-faq-item fade-up">
+        <div class="idx-faq-q">Who is this for?</div>
+        <div class="idx-faq-a">College Counseling is built for high school students serious about getting into a strong school. Master Classes are for anyone who wants high-signal instruction on a specific topic: high schoolers, college students, working professionals, and teams. 1:1 sessions are available for any of the above.</div>
+      </div>
+      <div class="idx-faq-item fade-up">
+        <div class="idx-faq-q">Is this available remotely?</div>
+        <div class="idx-faq-a">Yes, all sessions run via video call, anywhere in the world. In-person sessions are also available in the NJ&sol;NY area.</div>
+      </div>
+      <div class="idx-faq-item fade-up">
+        <div class="idx-faq-q">How much does it cost?</div>
+        <div class="idx-faq-a">Pricing is shown on the booking page. No payment is collected before your session is confirmed, just send a request and Dylan follows up personally.</div>
+      </div>
+      <div class="idx-faq-item fade-up">
+        <div class="idx-faq-q">Do I need to commit to multiple sessions?</div>
+        <div class="idx-faq-a">No. College Counseling is multi-session by nature, that&rsquo;s what makes it comprehensive, but there&rsquo;s no fixed package to sign. Master Classes book individually. Either way, no upfront commitment.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="cta">
+  <div class="cta-inner fade-up">
+    <h2 class="cta-h">Ready to get a<br><em>real edge?</em></h2>
+    <p class="cta-p">College counseling, career strategy, AI skills, investing. Whatever you&rsquo;re working on, there&rsquo;s a way in. No commitment needed to start.</p>
+    <div class="cta-row">
+      <a href="book.html" class="btn-primary">Get college counseling</a>
+      <a href="master-classes.html" class="btn-ghost-light">Browse master classes &rarr;</a>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <a href="home.html" class="f-logo">Rise <em>&amp;</em> Invest</a>
+  <div class="f-social">
+    <a href="https://www.linkedin.com/in/dylangutowski/" class="f-soc-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+    </a>
+    <a href="#" class="f-soc-link" target="_blank" rel="noopener" aria-label="Instagram"><!-- TODO: replace # with Instagram URL -->
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+    </a>
+  </div>
+  <a href="mailto:djg323@cornell.edu" class="f-email">djg323@cornell.edu</a>
+</footer>
+
+<script>
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', scrollY > 40); }, { passive: true });
+function toggleMenu() {
+  document.getElementById('mobileMenu').classList.toggle('open');
+  document.getElementById('hamburger').classList.toggle('open');
+}
+const obs = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } }); }, { threshold: 0.07 });
+document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>

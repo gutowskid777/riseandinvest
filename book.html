@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book a Session, Rise &amp; Invest</title>
+<meta name="description" content="Book college counseling, 1:1 coaching, or a master class with Dylan Gutowski, Cornell Dyson '29. College Counseling $100/hr. 1:1 Coaching $75/hr. Dylan responds within 24 hours.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Book a Session, Rise & Invest">
+<meta property="og:description" content="Book college counseling, 1:1 coaching, or a master class. College Counseling $100/hr. 1:1 Coaching $75/hr. Dylan responds personally within 24 hours.">
+<meta property="og:url" content="https://riseandinvest.com/booking.html">
+<meta property="og:image" content="https://riseandinvest.com/teaching.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Book a Session, Rise & Invest">
+<meta name="twitter:description" content="Choose a session type and send a request. Dylan responds personally within 24 hours.">
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+  :root {
+    --ink:#0D1F14; --cream:#F8F5EE; --warm:#F0ECE4;
+    --green:#1A9E72; --green-pale:#EBF7F2;
+    --muted:#6B6762; --dim:rgba(248,245,238,0.55);
+    --border:rgba(13,12,10,0.1); --border-dk:rgba(248,245,238,0.12);
+    --sh-sm:0 2px 8px rgba(13,12,10,0.06),0 0 0 1px rgba(13,12,10,0.04);--sh-md:0 8px 28px rgba(13,12,10,0.09),0 0 0 1px rgba(13,12,10,0.05);--sh-lg:0 14px 44px rgba(13,12,10,0.11),0 0 0 1px rgba(13,12,10,0.05);--r-card:10px;--r-btn:6px;
+    --pad-x:clamp(28px,5.5vw,100px); --max:1400px;
+  }
+  html { scroll-behavior:smooth; }
+  body { font-family:'DM Sans',sans-serif; color:var(--ink); background:var(--cream); overflow-x:hidden; font-size:16px; }
+  body::before { content:''; position:fixed; inset:-50%; width:200%; height:200%; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); opacity:0.025; pointer-events:none; z-index:9999; }
+
+  .nav { position:fixed; top:0; left:0; right:0; z-index:100; display:flex; align-items:center; justify-content:space-between; padding:0 var(--pad-x); height:64px; background:rgba(9,20,12,0.96); border-bottom:1px solid var(--border-dk); backdrop-filter:blur(8px); }
+  .nav-logo { font-family:'Cormorant Garamond',serif; font-size:20px; font-weight:500; color:var(--cream); text-decoration:none; }
+  .nav-logo em { font-style:italic; color:var(--green); }
+  .nav-links { display:flex; gap:30px; }
+  .nav-link { font-size:13px; color:rgba(248,245,238,0.6); text-decoration:none; letter-spacing:0.02em; transition:color 0.2s; }
+  .nav-link:hover { color:var(--cream); }
+  .nav-link.active { color:var(--cream); font-weight:500; }
+  .nav-cta { font-size:12px; font-weight:500; letter-spacing:0.05em; padding:9px 20px; background:var(--green); color:#fff; border-radius:var(--r-btn); box-shadow:0 2px 8px rgba(26,158,114,0.25); text-decoration:none; }
+
+  /* PAGE HERO */
+  .bk-hero { background:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%201440%20500%27%20preserveAspectRatio%3D%27xMidYMid%20slice%27%3E%3Cpath%20fill%3D%27none%27%20stroke%3D%27rgba%2826%2C158%2C114%2C0.10%29%27%20stroke-width%3D%271.5%27%20d%3D%27M0%2C180%20C180%2C110%20360%2C250%20540%2C180%20C720%2C110%20900%2C250%201080%2C180%20C1260%2C110%201360%2C155%201440%2C180%27%2F%3E%3Cpath%20fill%3D%27none%27%20stroke%3D%27rgba%28255%2C255%2C255%2C0.04%29%27%20stroke-width%3D%271%27%20d%3D%27M0%2C300%20C240%2C230%20480%2C370%20720%2C300%20C960%2C230%201200%2C370%201440%2C300%27%2F%3E%3Cpath%20fill%3D%27none%27%20stroke%3D%27rgba%2826%2C158%2C114%2C0.06%29%27%20stroke-width%3D%271%27%20d%3D%27M0%2C420%20C200%2C360%20400%2C480%20600%2C420%20C800%2C360%201000%2C480%201200%2C420%20C1340%2C375%201390%2C400%201440%2C420%27%2F%3E%3Cpath%20fill%3D%27none%27%20stroke%3D%27rgba%28255%2C255%2C255%2C0.025%29%27%20stroke-width%3D%271%27%20d%3D%27M0%2C80%20C300%2C30%20600%2C130%20900%2C80%20C1200%2C30%201350%2C60%201440%2C80%27%2F%3E%3C%2Fsvg%3E") center/cover no-repeat, linear-gradient(150deg, #0D1F14 0%, #060C08 42%, #0A1810 100%); padding:clamp(120px,14vh,150px) var(--pad-x) clamp(56px,7vh,80px); }
+  .bk-hero-inner { max-width:var(--max); margin:0 auto; }
+  .bk-eyebrow { font-size:11px; font-weight:500; letter-spacing:0.18em; text-transform:uppercase; color:var(--green); margin-bottom:20px; }
+  .bk-h1 { font-family:'Cormorant Garamond',serif; font-size:clamp(38px,5.5vw,68px); font-weight:500; color:var(--cream); line-height:1.05; margin-bottom:14px; }
+  .bk-h1 em { font-style:italic; }
+  .bk-sub { font-size:15px; color:var(--dim); line-height:1.75; max-width:500px; }
+
+  /* TRACK SELECTOR */
+  .tracks-wrap { padding:clamp(48px,6vh,72px) var(--pad-x); max-width:var(--max); margin:0 auto; }
+  .tracks-label { font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:var(--muted); margin-bottom:20px; }
+  .tracks-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-bottom:48px; }
+  .track-opt { border:1px solid var(--border); border-radius:var(--r-card); padding:22px 20px; cursor:pointer; box-shadow:var(--sh-sm); transition:border-color 0.2s,background 0.2s,transform 0.2s,box-shadow 0.2s; background:var(--cream); }
+  .track-opt:hover { border-color:rgba(13,12,10,0.22); transform:translateY(-2px); box-shadow:var(--sh-md); }
+  .track-opt.selected { border:2px solid var(--green); background:var(--green-pale); }
+  .to-top { display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:8px; gap:8px; }
+  .to-name { font-family:'Cormorant Garamond',serif; font-size:18px; font-weight:500; color:var(--ink); line-height:1.2; }
+  .to-price { font-size:10px; font-weight:500; padding:3px 10px; border-radius:999px; white-space:nowrap; flex-shrink:0; }
+  .price-amber { background:rgba(99,56,6,0.09); color:#633806; }
+  .price-purple { background:rgba(60,52,137,0.1); color:#3C3489; }
+  .to-desc { font-size:12px; color:var(--muted); line-height:1.6; }
+
+  /* FORM */
+  .form-wrap { background:var(--warm); border-top:1px solid var(--border); padding:clamp(48px,6vh,72px) var(--pad-x); }
+  .form-inner { max-width:660px; margin:0 auto; }
+  .form-label-main { font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:var(--muted); margin-bottom:28px; display:block; }
+  .form-row { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:0; }
+  .field { display:flex; flex-direction:column; gap:6px; margin-bottom:18px; }
+  .field label { font-size:10px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; color:var(--muted); }
+  .field input, .field select, .field textarea { font-family:'DM Sans',sans-serif; font-size:14px; padding:11px 14px; border:1px solid rgba(13,12,10,0.15); border-radius:var(--r-btn); background:var(--cream); color:var(--ink); width:100%; outline:none; transition:border-color 0.2s; }
+  .field input:focus, .field select:focus, .field textarea:focus { border-color:var(--green); }
+  .field textarea { height:100px; resize:vertical; }
+  .form-note { font-size:12px; color:var(--muted); line-height:1.7; padding:14px 16px; background:rgba(13,12,10,0.04); border-radius:var(--r-btn); margin-bottom:22px; }
+  .submit-btn { width:100%; padding:14px; background:var(--green); color:#fff; font-family:'DM Sans',sans-serif; font-size:14px; font-weight:500; letter-spacing:0.04em; border:none; border-radius:var(--r-btn); cursor:pointer; transition:opacity 0.2s; }
+  .submit-btn:hover { opacity:0.87; }
+
+  /* WHAT TO EXPECT STEPS */
+  .bk-steps { display:flex; flex-direction:column; margin-bottom:22px; border:1px solid var(--border); border-radius:var(--r-card); overflow:hidden; background:rgba(13,12,10,0.025); }
+  .bk-step { display:flex; align-items:flex-start; gap:14px; padding:14px 18px; }
+  .bk-step + .bk-step { border-top:1px solid var(--border); }
+  .bk-step-num { width:22px; height:22px; border-radius:50%; background:var(--green); color:#fff; font-size:11px; font-weight:500; display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:1px; }
+  .bk-step-title { font-size:13px; font-weight:500; color:var(--ink); margin-bottom:2px; line-height:1.35; }
+  .bk-step-desc { font-size:12px; color:var(--muted); line-height:1.55; }
+
+  /* FAQ */
+  .faq-wrap { padding:clamp(56px,7vw,88px) var(--pad-x); max-width:var(--max); margin:0 auto; }
+  .faq-inner { max-width:740px; }
+  .faq-eyebrow { font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:var(--muted); margin-bottom:24px; }
+  .faq-h2 { font-family:'Cormorant Garamond',serif; font-size:clamp(24px,2.8vw,36px); font-weight:500; color:var(--ink); margin-bottom:32px; }
+  .faq-item { border-bottom:1px solid var(--border); padding:18px 0; }
+  .faq-q { font-size:14px; font-weight:500; color:var(--ink); margin-bottom:7px; }
+  .faq-a { font-size:13px; color:var(--muted); line-height:1.72; }
+
+  /* FOOTER */
+  .footer { background:#0A1810; border-top:1px solid var(--border-dk); padding:26px var(--pad-x); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; }
+  .f-logo { font-family:'Cormorant Garamond',serif; font-size:16px; font-weight:500; color:rgba(248,245,238,0.55); text-decoration:none; }
+  .f-logo em { font-style:italic; color:var(--green); }
+  .f-social { display:flex; align-items:center; gap:14px; }
+  .f-soc-link { display:flex; align-items:center; color:rgba(248,245,238,0.35); transition:color 0.2s; }
+  .f-soc-link:hover { color:rgba(248,245,238,0.7); }
+  .f-email { font-size:12px; color:var(--green); text-decoration:none; }
+  .f-email:hover { text-decoration:underline; }
+
+  @keyframes fadeUp { from { opacity:0; transform:translateY(7px); } to { opacity:1; transform:translateY(0); } }
+  .anim-in { opacity:0; animation:fadeUp 0.75s ease forwards; }
+  .anim-in.a1 { animation-delay:0.15s; } .anim-in.a2 { animation-delay:0.3s; }
+  .fade-up { opacity:0; transform:translateY(20px); transition:opacity 0.7s ease,transform 0.7s ease; }
+  .fade-up.visible { opacity:1; transform:translateY(0); }
+
+  /* HAMBURGER + MOBILE MENU */
+  .nav-hamburger { display:none; flex-direction:column; gap:5px; cursor:pointer; padding:6px; background:none; border:none; margin-left:8px; flex-shrink:0; }
+  .nav-hamburger span { display:block; width:20px; height:1.5px; background:var(--cream); border-radius:2px; transition:transform 0.25s,opacity 0.25s; }
+  .nav-hamburger.open span:nth-child(1) { transform:translateY(6.5px) rotate(45deg); }
+  .nav-hamburger.open span:nth-child(2) { opacity:0; transform:scaleX(0); }
+  .nav-hamburger.open span:nth-child(3) { transform:translateY(-6.5px) rotate(-45deg); }
+  .mobile-menu { display:none; position:fixed; top:64px; left:0; right:0; background:rgba(6,12,8,0.98); backdrop-filter:blur(16px); border-bottom:1px solid var(--border-dk); z-index:98; padding:8px 0 20px; }
+  .mobile-menu.open { display:block; }
+  .mobile-menu a { display:block; font-size:15px; color:rgba(248,245,238,0.65); text-decoration:none; padding:13px var(--pad-x); transition:color 0.15s; }
+  .mobile-menu a:hover { color:var(--cream); }
+  .mobile-menu-divider { height:1px; background:var(--border-dk); margin:8px 0; }
+  .mobile-book { display:block; margin:12px var(--pad-x) 0; padding:13px; background:var(--green); color:#fff !important; font-size:13px; font-weight:500; border-radius:var(--r-btn); text-align:center; letter-spacing:0.04em; }
+
+  @media (max-width:768px) {
+    .nav-links { display:none; }
+    .nav-hamburger { display:flex; }
+    .tracks-grid { grid-template-columns:1fr; }
+    .form-row { grid-template-columns:1fr; }
+    .footer { flex-direction:column; align-items:flex-start; gap:8px; }
+    .bk-hero { padding-top:clamp(100px,14vh,130px); }
+    .faq-q { font-size:13px; }
+  }
+  @media (max-width:480px) {
+    .tracks-grid { grid-template-columns:1fr; }
+    .to-name { font-size:16px; }
+    .to-price { font-size:9px; }
+    .submit-btn { font-size:13px; padding:13px; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="home.html" class="nav-logo">Rise <em>&amp;</em> Invest</a>
+  <div class="nav-links">
+    <a class="nav-link" href="home.html">Home</a>
+    <a class="nav-link" href="master-classes.html">Master Classes</a>
+    <a class="nav-link" href="about.html">About</a>
+    <a class="nav-link active" href="book.html">Book</a>
+  </div>
+  <a class="nav-cta" href="master-classes.html">Browse master classes</a>
+  <button class="nav-hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Open menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="home.html">Home</a>
+  <a href="master-classes.html">Master Classes</a>
+  <a href="about.html">About</a>
+  <div class="mobile-menu-divider"></div>
+  <a href="book.html" class="mobile-book">Book a session</a>
+</div>
+
+<div class="bk-hero">
+  <div class="bk-hero-inner">
+    <div class="bk-eyebrow anim-in">Book a Session</div>
+    <h1 class="bk-h1 anim-in a1">Start with a<br><em>quick request.</em></h1>
+    <p class="bk-sub anim-in a2">Select a session type below, fill in a few details, and Dylan will follow up within 24 hours to confirm fit and scheduling. No payment upfront.</p>
+  </div>
+</div>
+
+<div class="tracks-wrap">
+  <div class="tracks-label fade-up">Select your session type</div>
+  <div class="tracks-grid fade-up">
+    <div class="track-opt selected" onclick="selectTrack(this,'College Counseling')">
+      <div class="to-top">
+        <div class="to-name">College Counseling</div>
+        <span class="to-price price-purple">$100/hr</span>
+      </div>
+      <p class="to-desc">Full engagement. School list, essays, resume, interview prep, positioning, everything. You become my project.</p>
+    </div>
+    <div class="track-opt" onclick="selectTrack(this,'1:1 Master Class')">
+      <div class="to-top">
+        <div class="to-name">1:1 Master Class</div>
+        <span class="to-price price-purple">$75/hr</span>
+      </div>
+      <p class="to-desc">Private session on any master class topic, just you and Dylan. SAT, AI, college apps, career strategy, investing. No group.</p>
+    </div>
+    <div class="track-opt" onclick="selectTrack(this,'Group Master Class')">
+      <div class="to-top">
+        <div class="to-name">Group Master Class</div>
+        <span class="to-price price-amber">$200/hr</span>
+      </div>
+      <p class="to-desc">Structured group session on a single topic. College prep, AI, career, or investing. 4&ndash;10 students.</p>
+    </div>
+  </div>
+
+  <div class="form-wrap fade-up" style="margin:-0 calc(-1 * var(--pad-x)); padding-left:var(--pad-x); padding-right:var(--pad-x);">
+    <div class="form-inner">
+      <span class="form-label-main">Your request</span>
+      <div id="form-success" style="display:none; padding:32px 28px; background:var(--green-pale); border:1.5px solid rgba(26,158,114,0.3); border-radius:var(--r-card); text-align:center; margin-bottom:24px;">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#1A9E72" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display:block;margin:0 auto 14px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        <p style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500;color:var(--ink);margin-bottom:8px;">Request sent.</p>
+        <p style="font-size:13px;color:var(--muted);line-height:1.7;">Dylan reviews every request personally and will follow up within 24 hours to confirm fit and scheduling.</p>
+      </div>
+      <form id="booking-form" name="booking" netlify method="POST" action="/">
+        <input type="hidden" name="session_type" id="session_type_field" value="College Counseling">
+        <div class="form-row">
+          <div class="field"><label>First name</label><input type="text" name="first_name" placeholder="Jane" required></div>
+          <div class="field"><label>Last name</label><input type="text" name="last_name" placeholder="Smith" required></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label>Email</label><input type="email" name="email" placeholder="jane@example.com" required></div>
+          <div class="field"><label>Phone (optional)</label><input type="tel" name="phone" placeholder="+1 (555) 000-0000"></div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label>Format preference</label>
+            <select name="format">
+              <option>Remote (video call)</option>
+              <option>In-person</option>
+              <option>Either works</option>
+            </select>
+          </div>
+          <div class="field" id="course-field">
+            <label>Master Class topic</label>
+            <select name="topic">
+              <option value="">Select a topic&hellip;</option>
+              <optgroup label="College Prep">
+                <option>College Apps 101</option>
+                <option>SAT 101</option>
+                <option>College Resume 101</option>
+                <option>The Insider&rsquo;s Playbook</option>
+              </optgroup>
+              <optgroup label="Career &amp; Finance">
+                <option>Internships &amp; Opportunities 101</option>
+                <option>Interview Prep 101</option>
+                <option>LinkedIn 101</option>
+                <option>Investing 101</option>
+              </optgroup>
+              <optgroup label="AI &amp; Tech">
+                <option>AI for Real Life</option>
+                <option>AI for School</option>
+                <option>Claude Advanced</option>
+                <option>AI Website Builder</option>
+              </optgroup>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label>Tell me about you and what you&rsquo;re looking for</label>
+          <textarea name="message" placeholder="Grade level, goals, context, anything helpful&hellip;"></textarea>
+        </div>
+        <div class="bk-steps">
+          <div class="bk-step">
+            <div class="bk-step-num">1</div>
+            <div>
+              <div class="bk-step-title">Submit your request</div>
+              <div class="bk-step-desc">Takes about 2 minutes. No payment collected upfront.</div>
+            </div>
+          </div>
+          <div class="bk-step">
+            <div class="bk-step-num">2</div>
+            <div>
+              <div class="bk-step-title">Dylan reviews and follows up</div>
+              <div class="bk-step-desc">Personally, within 24 hours. He&rsquo;ll confirm fit, answer your questions, and suggest a schedule.</div>
+            </div>
+          </div>
+          <div class="bk-step">
+            <div class="bk-step-num">3</div>
+            <div>
+              <div class="bk-step-title">Confirm and schedule</div>
+              <div class="bk-step-desc">Pick a date, finalize session type, and you&rsquo;re set. Payment happens after confirmation, never before.</div>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="submit-btn">Send request</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="faq-wrap">
+  <div class="faq-inner">
+    <div class="faq-eyebrow fade-up">Common questions</div>
+    <h2 class="faq-h2 fade-up">What to expect</h2>
+    <div class="faq-item fade-up">
+      <div class="faq-q">How do I know which session type is right for me?</div>
+      <div class="faq-a">If you want full college application support, school list, essays, everything, that&rsquo;s College Counseling. If you want help on a specific skill or topic, book a Master Class. If you want ongoing personalized coaching on career, AI, or SAT, book 1:1 Coaching. Not sure? Just say so in the form and we&rsquo;ll figure it out.</div>
+    </div>
+    <div class="faq-item fade-up">
+      <div class="faq-q">Are sessions available remotely?</div>
+      <div class="faq-a">Yes, all sessions are available remotely via video call, anywhere in the world. In-person sessions are also available; reach out to discuss logistics.</div>
+    </div>
+    <div class="faq-item fade-up">
+      <div class="faq-q">Is this only for students?</div>
+      <div class="faq-a">No. Rise &amp; Invest works with adults, professionals, organizations, and teams, particularly around AI skills and career development. If you&rsquo;re not sure whether it&rsquo;s the right fit, just reach out.</div>
+    </div>
+    <div class="faq-item fade-up">
+      <div class="faq-q">Can you work with organizations or teams?</div>
+      <div class="faq-a">Yes. Rise &amp; Invest works with private individuals (1:1 and small groups), schools, libraries, and organizations looking to upskill teams on AI, career strategy, or college prep. International engagements are welcome. Reach out with details and we&rsquo;ll build something that works.</div>
+    </div>
+    <div class="faq-item fade-up">
+      <div class="faq-q">Is there a minimum commitment for coaching?</div>
+      <div class="faq-a">No. Coaching sessions can be booked one at a time. For ongoing work like college counseling or SAT prep, we&rsquo;ll set up a package that works for your timeline, but there&rsquo;s no requirement to commit upfront.</div>
+    </div>
+    <div class="faq-item fade-up">
+      <div class="faq-q">What happens after I submit the form?</div>
+      <div class="faq-a">Dylan follows up personally within 24 hours to confirm session type, discuss scheduling, and answer any questions. No payment is collected before you&rsquo;re fully confirmed.</div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <a href="home.html" class="f-logo">Rise <em>&amp;</em> Invest</a>
+  <div class="f-social">
+    <a href="https://www.linkedin.com/in/dylangutowski/" class="f-soc-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+    </a>
+    <a href="#" class="f-soc-link" target="_blank" rel="noopener" aria-label="Instagram"><!-- TODO: replace # with Instagram URL -->
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+    </a>
+  </div>
+  <a href="mailto:djg323@cornell.edu" class="f-email">djg323@cornell.edu</a>
+</footer>
+
+<script>
+function toggleMenu() {
+  document.getElementById('mobileMenu').classList.toggle('open');
+  document.getElementById('hamburger').classList.toggle('open');
+}
+function selectTrack(el, type) {
+  document.querySelectorAll('.track-opt').forEach(t => t.classList.remove('selected'));
+  el.classList.add('selected');
+  document.getElementById('session_type_field').value = type;
+  const cf = document.getElementById('course-field');
+  if (type === 'College Counseling') {
+    cf.style.display = 'none';
+    cf.querySelector('select').value = '';
+  } else {
+    cf.style.display = '';
+  }
+}
+// Hide course field on initial load since CC is default
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('course-field').style.display = 'none';
+});
+const obs = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } }); }, { threshold: 0.07 });
+document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+
+// Auto-select track + course from URL params (?track=1on1&course=college-apps-101)
+(function() {
+  const p = new URLSearchParams(window.location.search);
+  const trackMap = { 'cc': 'College Counseling', '1on1': '1:1 Master Class', 'group': 'Group Master Class' };
+  const courseMap = {
+    'insiders-playbook': "The Insider’s Playbook",
+    'college-apps-101': 'College Apps 101',
+    'sat-101': 'SAT 101',
+    'college-resume-101': 'College Resume 101',
+    'internships-101': 'Internships & Opportunities 101',
+    'interview-prep-101': 'Interview Prep 101',
+    'linkedin-101': 'LinkedIn 101',
+    'investing-101': 'Investing 101',
+    'ai-for-real-life': 'AI for Real Life',
+    'ai-for-school': 'AI for School',
+    'claude-advanced': 'Claude Advanced',
+    'ai-website-builder': 'AI Website Builder'
+  };
+  const trackCode = p.get('track');
+  const courseId = p.get('course');
+  if (trackCode && trackMap[trackCode]) {
+    const name = trackMap[trackCode];
+    document.querySelectorAll('.track-opt').forEach(t => {
+      t.classList.remove('selected');
+      if (t.getAttribute('onclick') && t.getAttribute('onclick').includes(name)) {
+        t.classList.add('selected');
+        document.getElementById('session_type_field').value = name;
+      }
+    });
+    const cf = document.getElementById('course-field');
+    if (name === 'College Counseling') { cf.style.display = 'none'; } else { cf.style.display = ''; }
+  }
+  if (courseId && courseMap[courseId]) {
+    const sel = document.querySelector('select[name="topic"]');
+    if (sel) {
+      for (let o of sel.options) {
+        if (o.text === courseMap[courseId]) { o.selected = true; break; }
+      }
+    }
+  }
+})();
+
+// AJAX form submission with inline success state
+const form = document.getElementById('booking-form');
+if (form) {
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const btn = this.querySelector('.submit-btn');
+    btn.textContent = 'Sending…';
+    btn.disabled = true;
+    try {
+      const data = new URLSearchParams(new FormData(this));
+      data.append('form-name', 'booking');
+      const resp = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: data.toString()
+      });
+      if (resp.ok) {
+        form.style.display = 'none';
+        document.getElementById('form-success').style.display = 'block';
+        document.getElementById('form-success').scrollIntoView({ behavior: 'smooth', block: 'center' });
+      } else {
+        btn.textContent = 'Send request';
+        btn.disabled = false;
+        alert('Something went wrong. Please email djg323@cornell.edu directly.');
+      }
+    } catch(err) {
+      btn.textContent = 'Send request';
+      btn.disabled = false;
+      alert('Something went wrong. Please email djg323@cornell.edu directly.');
+    }
+  });
+}
+</script>
+</body>
+</html>
